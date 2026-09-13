@@ -12,7 +12,10 @@ It emulates a vulnerable **Smart-Cam Linux Node on Telnet (Port 23)**. When a ha
 ## ✨ Features
 *   **Telnet Service Emulation:** Mimics an insecure Smart Camera Linux Node login prompt on Port 23.
 *   **Visual Intrusion Alerts:** Displays a custom graphical "Angry Robot Eyes" warning screen on a 128x64 SSD1306 OLED display upon intrusion.
+  ![Attack](Alert.jpeg)
+
 *   **Instant Telegram Notifications:** Uses secure HTTPS (`WiFiClientSecure`) to push live attacker IP tracking directly to your phone.
+  ![Telegram](Telegram.jpeg)
 *   **Built-in Status LED Indicator:** Blinks during Wi-Fi setup and lights up steadily when an attack is caught.
 *   **Automatic Reset:** Automatically purges the malicious connection after logging and goes back to standard stealth monitoring mode after 5 seconds.
 
@@ -64,6 +67,7 @@ Ensure you have the following libraries installed in your **Arduino IDE**:
     ```bash
     telnet <YOUR_ESP8266_IP> 23
     ```
+    ![Trap](System.jpeg)
 5.  **The Trap:** The attacker receives a spoofed dummy banner: `Welcome to Smart-Cam Linux Node v4.19`.
 6.  **The Response:** The hardware triggers the local LED, draws hostile robot eyes to warn physical onlookers, logs the network parameters to the Serial Monitor (115200 baud), and alerts the administrator via Telegram.
 
