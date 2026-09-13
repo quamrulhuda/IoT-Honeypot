@@ -58,12 +58,14 @@ Ensure you have the following libraries installed in your **Arduino IDE**:
 ## 📊 Live Demonstration & Workflow
 1.  **Boot Phase:** The OLED prints `Honeypot Booting...` while the LED flashes dynamically during network initialization.
 2.  **Stealth Listening:** Once online, the screen shows `[ STATUS: WAITING ]` along with the assigned Local Device IP address.
-3.  **Triggering an Attack:** An attacker attempts a port sweep or direct connection via terminal:
+   ![STATUS: WAITING](Status_Normal.jpeg)
+
+4.  **Triggering an Attack:** An attacker attempts a port sweep or direct connection via terminal:
     ```bash
     telnet <YOUR_ESP8266_IP> 23
     ```
-4.  **The Trap:** The attacker receives a spoofed dummy banner: `Welcome to Smart-Cam Linux Node v4.19`.
-5.  **The Response:** The hardware triggers the local LED, draws hostile robot eyes to warn physical onlookers, logs the network parameters to the Serial Monitor (115200 baud), and alerts the administrator via Telegram.
+5.  **The Trap:** The attacker receives a spoofed dummy banner: `Welcome to Smart-Cam Linux Node v4.19`.
+6.  **The Response:** The hardware triggers the local LED, draws hostile robot eyes to warn physical onlookers, logs the network parameters to the Serial Monitor (115200 baud), and alerts the administrator via Telegram.
 
 ---
 
