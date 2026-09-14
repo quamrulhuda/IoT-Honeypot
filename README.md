@@ -8,6 +8,15 @@ An open-source, lightweight **IoT Honeypot** built on the **ESP8266** platform. 
 It emulates a vulnerable **Smart-Cam Linux Node on Telnet (Port 23)**. When a hacker or automated scanner attempts to connect, the device captures their IP address, triggers an **Angry Robot Eyes Alert** on an I2C OLED display, and immediately sends a secure **HTTPS alert notification to your Telegram Channel/Bot**.
 
 ---
+## 🧐 What is a Honeypot?
+
+In cybersecurity, a **Honeypot** is a defensive, decoy system deployed within a network to act as bait. It is intentionally designed to look like a vulnerable, high-value asset (such as an unprotected smart camera, router, or server) to attract malicious actors and automated hacking bots. 
+
+Because a honeypot has no legitimate production value, **any traffic or connection attempt directed at it is instantly flagged as unauthorized and suspicious**. This allows network administrators to:
+* **Detect Early Intrusions:** Spot hackers reconnoitering or scanning the local network before they find real targets.
+* **Gather Threat Intelligence:** Study attacker behaviors, origins (IP tracking), and execution patterns safely without risking critical infrastructure.
+
+---
 
 ## ✨ Features
 *   **Telnet Service Emulation:** Mimics an insecure Smart Camera Linux Node login prompt on Port 23.
@@ -46,7 +55,7 @@ Ensure you have the following libraries installed in your **Arduino IDE**:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com
+    git clone https://github.com](https://github.com/quamrulhuda/IoT-Honeypot.git
     ```
 2.  **Configure Credentials:** Open the `.ino` file and update the configuration tokens securely:
     ```cpp
