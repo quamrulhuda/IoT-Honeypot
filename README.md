@@ -55,7 +55,7 @@ Ensure you have the following libraries installed in your **Arduino IDE**:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com](https://github.com/quamrulhuda/IoT-Honeypot.git
+    git clone https://github.com/quamrulhuda/IoT-Honeypot.git
     ```
 2.  **Configure Credentials:** Open the `.ino` file and update the configuration tokens securely:
     ```cpp
